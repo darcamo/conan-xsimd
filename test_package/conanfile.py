@@ -3,7 +3,7 @@ import os
 from conans import ConanFile, CMake, tools
 
 
-class XtensorxsimdTestConan(ConanFile):
+class XsimdTestConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
 

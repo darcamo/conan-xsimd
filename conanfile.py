@@ -3,8 +3,8 @@ import shutil
 import os
 
 
-class XtensorxsimdConan(ConanFile):
-    name = "xtensor-xsimd"
+class XsimdConan(ConanFile):
+    name = "xsimd"
     version = "6.0.0"
     license = "BSD-3"
     url = "https://github.com/darcamo/conan-xsimd"

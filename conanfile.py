@@ -21,7 +21,8 @@ class XtensorxsimdConan(ConanFile):
         tools.get("https://github.com/QuantStack/xsimd/archive/{0}.zip".format(self.version))
         shutil.move("xsimd-{0}".format(self.version), "sources")
 
-        tools.replace_in_file("sources/CMakeLists.txt", "project(xsimd)",
+        tools.replace_in_file("sources/CMakeLists.txt",
+                              "project(xsimd)",
                               """project(xsimd)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()""")
@@ -32,6 +33,3 @@ conan_basic_setup()""")
         shutil.move("conanbuildinfo.cmake", "build/")
         cmake.configure(source_folder="sources", build_folder="build")
         cmake.install()
-
-    # def package(self):
-    #     self.copy("*.h", "include")

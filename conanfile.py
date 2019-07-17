@@ -5,7 +5,7 @@ import os
 
 class XsimdConan(ConanFile):
     name = "xsimd"
-    version = "6.0.0"
+    version = "7.2.3"
     license = "BSD-3"
     url = "https://github.com/darcamo/conan-xsimd"
     description = "Modern, portable C++ wrappers for SIMD intrinsics and parallelized, optimized math implementations "
